@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>All</title>
-  
+  <icon>https://www.gravatar.com/avatar/916e401ced5c66024bbe596fe8dc2c68</icon>
   <subtitle>感谢有你相伴🌹</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://www.xn--yet221g.top/"/>
   <updated>2018-06-21T12:07:52.176Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://www.xn--yet221g.top/</id>
   
   <author>
     <name>小芳 All</name>
-    
+    <email>310253936@qq.com</email>
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
     <title>Hello GitHub</title>
-    <link href="http://yoursite.com/2018/06/21/Hello-GitHub/"/>
-    <id>http://yoursite.com/2018/06/21/Hello-GitHub/</id>
+    <link href="http://www.xn--yet221g.top/2018/06/21/Hello-GitHub/"/>
+    <id>http://www.xn--yet221g.top/2018/06/21/Hello-GitHub/</id>
     <published>2018-06-21T10:12:00.000Z</published>
     <updated>2018-06-21T12:07:52.176Z</updated>
     
@@ -35,19 +35,19 @@
     
     </summary>
     
-      <category term="hello" scheme="http://yoursite.com/categories/hello/"/>
+      <category term="hello" scheme="http://www.xn--yet221g.top/categories/hello/"/>
     
     
-      <category term="hello" scheme="http://yoursite.com/tags/hello/"/>
+      <category term="hello" scheme="http://www.xn--yet221g.top/tags/hello/"/>
     
-      <category term="all" scheme="http://yoursite.com/tags/all/"/>
+      <category term="all" scheme="http://www.xn--yet221g.top/tags/all/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/06/21/hello-world/"/>
-    <id>http://yoursite.com/2018/06/21/hello-world/</id>
+    <link href="http://www.xn--yet221g.top/2018/06/21/hello-world/"/>
+    <id>http://www.xn--yet221g.top/2018/06/21/hello-world/</id>
     <published>2018-06-21T07:44:25.611Z</published>
     <updated>2018-06-21T07:44:25.611Z</updated>
     
