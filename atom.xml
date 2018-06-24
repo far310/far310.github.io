@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xn--yet221g.top/"/>
-  <updated>2018-06-23T13:31:58.627Z</updated>
+  <updated>2018-06-24T08:17:56.374Z</updated>
   <id>http://www.xn--yet221g.top/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Git常用命令</title>
+    <link href="http://www.xn--yet221g.top/2018/06/24/Git/"/>
+    <id>http://www.xn--yet221g.top/2018/06/24/Git/</id>
+    <published>2018-06-24T14:13:06.000Z</published>
+    <updated>2018-06-24T08:17:56.374Z</updated>
+    
+    <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="https://i.imgur.com/x9aM8vk.png" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><a id="more"></a><hr><p><strong>1. git diff 文件全局名</strong></p><blockquote><p>对比文件与当前版本库的不同。<br>PS：效果等同：<br>git diff HEAD – 文件全局名</p></blockquote><p><strong>2. cat 文件全局名 </strong></p><blockquote><p>查看文件内容</p></blockquote><p><strong>3. git log</strong></p><blockquote><p>查看提交版本日志（只展示当前所在版本及以前版本）。<br>PS：单排显示：<br>git log –pretty=oneline<br>版本号简写显示：<br>git log –pretty=oneline –abbrev-commit<br>时间线显示：<br>git log –graph –pretty=oneline –abbrev-commit</p></blockquote><p><strong>4. git reflog</strong></p><blockquote><p>查看提交版本日志（展示所有版本）</p></blockquote><p><strong>5. git reset –hard HEAD^</strong></p><blockquote><p>PS：版本穿梭，HEAD表示当前版本，HEAD^表示上一版本，HEAD^^表示上两个版本…</p></blockquote><p><strong>6. git reset –hard HEAD~1</strong></p><blockquote><p>PS：版本穿梭，HEAD表示当前版本，HEAD~1表示上一版本，HEAD~2表示上两个版本…</p></blockquote><p><strong>7. git reset –hard 版本号</strong></p><blockquote><p>PS：版本穿梭，版本号不必32位都写全，一般写7位就可以了，git会自己去查找。</p></blockquote><p><strong>8. git checkout – 文件全局名</strong></p><blockquote><p>工作区文件内容会被版本库上最新的内容覆盖</p></blockquote><p><strong>9. git reset HEAD 文件全局名</strong></p><blockquote><p>这样可以清空暂存区，而工作区的内容不变，所以工作区文件状态会发生变化</p></blockquote><p><strong>10. git rm 文件全局名</strong></p><blockquote><p>删除文件<br>PS：只有提交至版本库的文件才能rm，只是在工作区或暂存区是不能使用rm的</p></blockquote><p><strong>11. ssh-keygen -t rsa -C “<a href="mailto:310253936@qq.com" target="_blank" rel="noopener">310253936@qq.com</a>“</strong></p><blockquote><p>PS:邮箱是写自己的<br>生成ssh key</p></blockquote><p><strong>12. git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:qwebh3210/gittest.git</strong></p><blockquote><p>本地仓库关联远程仓库<br>PS：也可以用http协议关联：<br>git remote add origin <a href="https://github.com/qwebh3210/gittest.git" target="_blank" rel="noopener">https://github.com/qwebh3210/gittest.git</a></p></blockquote><p><strong>13. git push -u origin master</strong></p><blockquote><p>把本地仓库当前分支推送到远程仓库指定分支<br>PS：第一次推送需要参数-u进行验证，之后不需要</p></blockquote><p><strong>14. git clone 远程仓库地址</strong></p><blockquote><p>克隆远程仓库<br>PS：git clone下来的只有master分支</p></blockquote><p><strong>15. git add 文件全局名</strong></p><blockquote><p>把文件添加至暂存区<br>PS：删除的文件不需要add，可以直接commit</p></blockquote><p><strong>16. git log -1</strong></p><blockquote><p>PS：显示最后一次提交信息（作者、时间、提交注释）</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;span itemprop=&quot;image&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;&lt;img itemprop=&quot;url image&quot; src=&quot;https://i.imgur.com/x9aM8vk.png&quot; class=&quot;full-image&quot;&gt;&lt;meta itemprop=&quot;width&quot; content=&quot;auto&quot;&gt;&lt;meta itemprop=&quot;height&quot; content=&quot;auto&quot;&gt;&lt;/span&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="http://www.xn--yet221g.top/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="http://www.xn--yet221g.top/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>会摆造型的数字时钟</title>
     <link href="http://www.xn--yet221g.top/2018/06/23/%E6%97%B6%E9%97%B4/"/>
     <id>http://www.xn--yet221g.top/2018/06/23/时间/</id>
     <published>2018-06-23T14:13:06.000Z</published>
-    <updated>2018-06-23T13:31:58.627Z</updated>
+    <updated>2018-06-24T08:06:11.356Z</updated>
     
     <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="https://i.imgur.com/bzZE0yL.jpg" class="full-image" alt="会摆造型的数字时钟"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><a id="more"></a><h2 id="会摆造型的数字时钟会是什么样子呢？"><a href="#会摆造型的数字时钟会是什么样子呢？" class="headerlink" title="会摆造型的数字时钟会是什么样子呢？"></a>会摆造型的数字时钟会是什么样子呢？</h2><ul><li>页面效果如下：<br><img src="https://i.imgur.com/vBA6af3.png" alt=""></li></ul><ol><li><p>JS代码如下:</p><blockquote><p><code>&lt;script charset=&quot;Shift_JIS&quot; src=&quot;http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js&quot; &gt;&lt;/script&gt;</code></p></blockquote></li><li><p>HTML代码如下：</p><blockquote><p><code>&lt;embed width=&quot;320&quot; height=&quot;140&quot; align=&quot;middle&quot; pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; name=&quot;honehoneclock&quot; bgcolor=&quot;#ffffff&quot; quality=&quot;high&quot; src=&quot;http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf&quot; wmode=&quot;transparent&quot;/&gt;</code></p></blockquote></li></ol>]]></content>
     
