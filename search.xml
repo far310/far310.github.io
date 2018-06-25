@@ -12,6 +12,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Git常用命令]]></title>
+    <url>%2F2018%2F06%2F24%2FHexo%2F</url>
+    <content type="text"><![CDATA[hexo 命令hexo new “postName” #新建文章hexo new page “pageName” #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）hexo deploy #将.deploy目录部署到GitHubhexo help # 查看帮助hexo version #查看Hexo的版本hexo deploy -g #生成加部署hexo server -g #生成加预览命令的简写hexo n == hexo newhexo g == hexo generatehexo s == hexo serverhexo d == hexo deploy 作者：牛牛佳俊链接：https://www.jianshu.com/p/a2fe56d11c4f來源：简书简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[会摆造型的数字时钟]]></title>
     <url>%2F2018%2F06%2F23%2F%E6%97%B6%E9%97%B4%2F</url>
     <content type="text"><![CDATA[会摆造型的数字时钟会是什么样子呢？ 页面效果如下： JS代码如下: &lt;script charset=&quot;Shift_JIS&quot; src=&quot;http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js&quot; &gt;&lt;/script&gt; HTML代码如下： &lt;embed width=&quot;320&quot; height=&quot;140&quot; align=&quot;middle&quot; pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; name=&quot;honehoneclock&quot; bgcolor=&quot;#ffffff&quot; quality=&quot;high&quot; src=&quot;http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf&quot; wmode=&quot;transparent&quot;/&gt;]]></content>

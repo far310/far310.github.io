@@ -39,6 +39,28 @@
   </entry>
   
   <entry>
+    <title>Git常用命令</title>
+    <link href="http://www.xn--yet221g.top/2018/06/24/Hexo/"/>
+    <id>http://www.xn--yet221g.top/2018/06/24/Hexo/</id>
+    <published>2018-06-24T14:13:06.000Z</published>
+    <updated>2018-06-25T01:53:00.861Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.imgur.com/x9aM8vk.png" alt=""></p><a id="more"></a><hr><p>hexo 命令<br>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo generate #生成静态页面至public目录<br>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）<br>hexo deploy #将.deploy目录部署到GitHub<br>hexo help  # 查看帮助<br>hexo version  #查看Hexo的版本<br>hexo deploy -g  #生成加部署<br>hexo server -g  #生成加预览<br>命令的简写<br>hexo n == hexo new<br>hexo g == hexo generate<br>hexo s == hexo server<br>hexo d == hexo deploy</p><p>作者：牛牛佳俊<br>链接：<a href="https://www.jianshu.com/p/a2fe56d11c4f" target="_blank" rel="noopener">https://www.jianshu.com/p/a2fe56d11c4f</a><br>來源：简书<br>简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/x9aM8vk.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="http://www.xn--yet221g.top/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="http://www.xn--yet221g.top/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>会摆造型的数字时钟</title>
     <link href="http://www.xn--yet221g.top/2018/06/23/%E6%97%B6%E9%97%B4/"/>
     <id>http://www.xn--yet221g.top/2018/06/23/时间/</id>
