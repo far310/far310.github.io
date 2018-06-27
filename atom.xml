@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xn--yet221g.top/"/>
-  <updated>2018-06-25T02:56:16.467Z</updated>
+  <updated>2018-06-27T06:47:15.405Z</updated>
   <id>http://www.xn--yet221g.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL常用命令</title>
+    <link href="http://www.xn--yet221g.top/2018/06/27/MySQL/"/>
+    <id>http://www.xn--yet221g.top/2018/06/27/MySQL/</id>
+    <published>2018-06-27T14:13:06.000Z</published>
+    <updated>2018-06-27T06:47:15.405Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.imgur.com/qzGnrgx.jpg" alt=""></p><a id="more"></a><hr><p><strong>命令行连接数据库</strong></p><blockquote><p>mysql h-服务器主机地址 -u用户名 -p密码<br>如果是在本机操作，可省略-h参数，不是本机可以填写地址，或者端3306<br>示例：mysql -u root -p sa</p></blockquote><p><strong>查看当前mysql版本信息及用户名</strong></p><blockquote><p>select version(),user();<br>version()返回版本号，user()返回连接数据库用户名</p></blockquote><p><strong>创建数据库</strong></p><blockquote><p>create database 数据库名;</p></blockquote><p><strong>查看数据库列表</strong></p><blockquote><p>show databases;</p></blockquote><p><strong>选择数据库</strong></p><blockquote><p>use 数据库名;<br>示例：use myschool;</p></blockquote><p><strong>删除数据库</strong></p><blockquote><p>drop database 数据库名;<br>示例：drop database myschool;<br>警告：不要把系统默认的数据库删了，如果删了需要重装。</p></blockquote><p><strong>创建数据库表</strong></p><blockquote><p>首先选择数据库，在创建表<br>cerate table [if not exists] 表名( //if not exists 应该是判断表是否存在<br>    字段1 数据类型 [字段属性|约束] [索引] [注释] ,<br>    字段2 数据类型 [字段属性|约束] [索引] [注释]<br>)[表类型] [表字符集] [注释];<br>示例：<br>cerate table myschool(<br>    No int(4) primary key,//primary key 设置主键 //not null 非空约束<br>    name char(10)<br>);</p></blockquote><p><strong>添加数据</strong></p><blockquote><p>insert into 表名 value(值1),(值2),(值3);<br>示例：insert into name value(‘1’),(‘2’),(‘3’);</p></blockquote><p><strong>字段的约束及属性</strong></p><blockquote><p>not null 非空约束<br>default 默认约束<br>unique key(‘字段’) 唯一约束<br>primary key 主键约束<br>foreign key (‘主表字段’) 外键约束<br>auto_increment 自动增长 标识列</p></blockquote><p><strong>注释</strong></p><blockquote><p>create table test(<br>    id int(11) unsigned//唯一约束 comment ‘编号’<br>)comment=’测试表’;</p></blockquote><p><strong>查看表</strong></p><blockquote><p>show tables;</p></blockquote><p><strong>查看表的定义</strong></p><blockquote><p>describe 表名;<br>desc 表名;<br>示例：use myschool;desc student;</p></blockquote><p><strong>删除表</strong></p><blockquote><p>drop table [if exists] 表名;</p></blockquote><p><strong>mysql帮助</strong></p><blockquote><p>help <code>查询的关键字</code>;</p></blockquote><p><strong>修改表名</strong></p><blockquote><p>alter table&lt;旧表名&gt; rename [to] &lt;新表名&gt;;\to为可选参数，使用与否不影响结果。仅修改表名，表结构不表<br>示例：alter table student rename stu;</p></blockquote><p><strong>添加字段</strong></p><blockquote><p>alter table 表名 add 字段名 数据类型 [属性];<br>示例：alter table add pwd varchar(50) not null;</p></blockquote><p><strong>修改字段</strong></p><blockquote><p>alter table 表名 change 原字段 新字段 数据类型 [属性];<br>示例：alter table demo change name username char(2) not null;</p></blockquote><p><strong>删除字段</strong></p><blockquote><p>alter table 表名 drop 字段名;<br>示例：alter table demo drop pwd;</p></blockquote><p><strong>添加主外键约束</strong></p><blockquote><p>alter table 表名 add constraint 主键名 primary key 表名(主键字段); //主键名以pk_开头<br>示例：alter table grade add constraint pk_grade primary key grade(gradeId);</p></blockquote><p><strong>组合主键</strong></p><blockquote><p>primary key(主键字段1，主键字段2);</p></blockquote><p><strong>添加外键约束</strong></p><blockquote><p>alter table 表名//从表 add constraint 外键名 foreign key(外键字段) references 关键表名(关联字段)//主表; \外键名以fk_开头<br>示例：alter table student add constraint fk_student_grade foreign key(gradeId) references grade(gradeId);</p></blockquote><p><strong>备份</strong></p><blockquote><p>方式1：<br>insert into 新表(字段1，字段2)\新表必须存在<br>select 字段1，字段2<br>from 原表;<br>方式2：<br>create table 新表（select 字段1，字段2 from 原表）;</p></blockquote><p><strong>删除数据</strong></p><blockquote><p>delete from 表名 [where条件];条件删除，标识列继续<br>truncate table 表名;删除全部数据，标识列从头开始</p></blockquote><p><strong>limit子句</strong></p><blockquote><p>limit [从第几条开始查\从0开始，行数]<br>示例：limit 4,4;</p></blockquote><p><strong>执行事务</strong></p><blockquote><p>开始事务：begin;<br>提交事务：commit;<br>撤销事务：rollback;</p></blockquote><p><strong>使用sql语句创建视图</strong></p><blockquote><p>create view 视图名<br>as </p></blockquote><p>&lt;select语句&gt;</p><p><strong>使用sql语句删除视图</strong></p><blockquote><p>drop view [if exists] 视图名;</p></blockquote><p><strong>查看视图</strong></p><blockquote><p>select 字段1，字段2 from 视图名</p></blockquote><p><strong>数据备份</strong></p><blockquote><p>mysqldump -u 登录名 -p 密码 要备份的数据 [表名] &gt; 文件名称</p></blockquote><blockquote><p>数据还原 -u 登录名 -p 密码 &lt; 文件名称</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/qzGnrgx.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="MySQL" scheme="http://www.xn--yet221g.top/categories/MySQL/"/>
+    
+    
+      <category term="MySQL" scheme="http://www.xn--yet221g.top/tags/MySQL/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo命令</title>
