@@ -4,3 +4,9 @@ http://www.xn--yet221g.top/2018/06/27/MySQL/
 http://www.xn--yet221g.top/2018/06/25/Hexo/
 http://www.xn--yet221g.top/2018/06/24/Git/
 http://www.xn--yet221g.top/2018/06/23/时间/
+http://www.xn--yet221g.top/2018/05/16/什么是单例模式/
+http://www.xn--yet221g.top/2018/05/14/胡思乱想/
+http://www.xn--yet221g.top/2017/12/01/对人工智能的一些思考/
+http://www.xn--yet221g.top/2017/11/28/编程简史/
+http://www.xn--yet221g.top/2017/11/04/编程入门/
+http://www.xn--yet221g.top/2017/05/11/千里之行-Java环境变量配置/
